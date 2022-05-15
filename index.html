@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To do list</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
+
+
+
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            padding-top: 5rem;
+        }
+
+        main {
+            /* margin: 5rem; */
+            background-color: rgb(185, 195, 204);
+            width: 55%;
+            /* text-align: center; */
+            padding: 10px;
+
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            /* justify-content: center; */
+        }
+
+        .form-check-input{
+            height: 22px;
+            width: 39px;
+            text-align: center;
+        }
+        
+    </style>
+
+
+</head>
+
+<body>
+    <main>
+        <h2>My To-Do List</h2>
+        <div>
+            <ol class="list-container">
+                <!-- <li>
+                    First List
+                    <button class="complete-list-btn">Completed</button>
+                    <button class="delete-list-btn">Delete</button>
+                </li> -->
+
+            </ol>
+        </div>
+
+        <form action="">
+
+            <div class="create-new-list">
+                <label for="">Create new task</label>
+                <input type="text" id="new-list-input">
+                <button id="add-list-btn" disabled type="submit">Create</button>
+            </div>
+        </form>
+
+
+
+        <table class="table table-bordered  mt-4">
+            <thead>
+                <tr>
+                    <th>Sno</th>
+                    <th>Task</th>
+                    <th>Complete</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="mybody">
+
+            
+            </tbody>
+        </table>
+
+
+    </main>
+
+    <script src="main.js"></script>
+    <!-- <script src="old.js"></script> -->
+
+</body>
+
+</html>
